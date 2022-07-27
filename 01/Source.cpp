@@ -16,23 +16,23 @@ int main(int argc, char** argv) {
 #if MODE == 1
 	#include "add.h"
 
-	std::cout << "Ðàáîòàþ â áîåâîì ðåæèìå" << std::endl;
+	std::cout << "Работаю в боевом режиме" << std::endl;
 	
 	int a = 0;
 	int b = 0;
 	
-	std::cout << "Ââåäèòå ÷èñëî 1: ";
+	std::cout << "Введите число 1: ";
 	std::cin >> a;
 	
-	std::cout << "Ââåäèòå ÷èñëî 2: ";
+	std::cout << "Введите число 2: ";
 	std::cin >> b;
 	
-	std::cout << "Ðåçóëüòàò ñëîæåíèÿ: " << add(a, b);
+	std::cout << "Результат сложения: " << add(a, b);
 	
 #elif MODE == 0
-	std::cout << "Ðàáîòàþ â ðåæèìå òðåííèðîâêè" << std::endl;
+	std::cout << "Работаю в режиме треннировки" << std::endl;
 #else 
-	std::cout << "Íåèçâåñòíûé ðåæèì. Çàâåðøåíèå ðàáîòû" << std::endl;
+	std::cout << "Неизвестный режим. Завершение работы" << std::endl;
 #endif
 
 	return 0;
