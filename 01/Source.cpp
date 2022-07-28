@@ -1,12 +1,9 @@
 #include <iostream>
 
-
 #define MODE 1
 
 #ifndef MODE
-
 #error Macro MOOD required.
-
 #endif
 
 #if MODE == 1
