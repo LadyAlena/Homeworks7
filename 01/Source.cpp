@@ -9,13 +9,15 @@
 
 #endif
 
+#if MODE == 1
+#include "add.h"
+#endif
+
 int main(int argc, char** argv) {
 
 	setlocale(LC_ALL, "ru");
 
 #if MODE == 1
-	#include "add.h"
-
 	std::cout << "Работаю в боевом режиме" << std::endl;
 	
 	int a = 0;
