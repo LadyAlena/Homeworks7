@@ -7,7 +7,10 @@
 #endif
 
 #if MODE == 1
-#include "add.h"
+	int add(int x, int y)
+	{
+		return x + y;
+	}
 #endif
 
 int main(int argc, char** argv) {
